@@ -1,0 +1,90 @@
+body {
+  margin:0 auto;
+}
+.main {
+
+	width:100%;
+	height:100%;
+	display: flex;
+    flex-direction:column;
+
+}
+.main .titlebar {
+	height:50px;
+	background:#3b5998;
+	display: flex;
+    flex-direction:row-reverse;
+}
+
+.main .titlebar .action {
+	width:auto;
+	text-transform: uppercase;
+	padding:5px 9px;
+	font-size: 16px;
+	transition: .3s all;
+	text-align: center;
+    line-height: 2.2;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.4;
+    border-right:1px solid #d9d9d9;
+    display: -webkit-box;
+    font-family: Fontb;
+}
+.main .titlebar .action:hover {
+	background:#555;
+	opacity: 0.6;
+	cursor: pointer;
+}
+.main .titlebar .action i {
+	    position: relative;
+    top: 5.5px;
+}
+.main .titlebar .title {
+	color: #fff;
+    font-size: 17px;
+    line-height: 2.9;
+    position: absolute;
+    left: 8px;
+    font-family: Fonta;
+    font-weight: 600;
+    letter-spacing: 0.8;
+}
+
+.main .titlebar .action .indi {
+	display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 50px;
+    top: -10px;
+    margin-left: 3px;
+}
+.main .titlebar .action .indi span {
+height:50%;
+width:31px;
+text-align: center;
+}
+.main .titlebar .action .indi span:hover {
+     background: #000;
+     color:#fff!important;
+	}
+
+
+
+.editor { 
+        position: relative;
+        width:100%;
+        height:100%;
+}
+@font-face {
+    font-family: Fonta;
+    src: url(node_modules/fonts/sansation_light.woff);
+}
+@font-face {
+      font-family: Fontb;
+      src: url("node_modules/fonts/zrnic.ttf");
+    }
+
+.ace_print-margin {
+  display:none!important;
+}   

@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="src/auto-add-input.js"></script>	
+<script type="text/javascript" src="app.js"></script>
+
+</head>
+
+
+
+
+
+
+<body ng-app="TesterApp" ng-controller="mainCtrl">
+
+{{text}}
+
+<auto-add-input ng-model="text">
+<br/>
+  <input type="text" data-array='$index'/>
+</auto-add-input>
+
+
+
+
+
+
+</body>
+
+</html>
